@@ -32,7 +32,11 @@ csv_titles=[]
 #                       'Server=HQ_042;'
 #                       'Database=news;'
 #                       'Trusted_Connection=yes;')
-conn = psycopg2.connect(host="ec2-54-75-231-215.eu-west-1.compute.amazonaws.com",database="ddn7d8m4bs78jr",user="wgyaqzxvarsoby",password="6685a27f2bb9023b7a9b440f6f40e5de29c794117a27647a1f6a687ea2af4bb1")
+conn = psycopg2.connect(
+	host="host",
+	database="database",user="user",
+	password="password"
+	)
 
 class News:
 	def __init__(self,max):
